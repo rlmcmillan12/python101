@@ -35,14 +35,14 @@
 # Working with functions
 
 # inputs
-first_name = input('What is your first name?: ')
-last_name = input('What is your last name?: ')
-domain = '@mcmillancarpentry.com'
+first_name = input("What is your first name?: ")
+last_name = input("What is your last name?: ")
+domain = "@mcmillancarpentry.com"
 # Greeter
 
 
 def greeter(first_name, last_name):
-    print(f"Thank you and welcome to the woodshop, {first_name} {last_name}")
+    print(f"Thank you and welcome to the woodshop, {first_name} {last_name}\n")
 
     # greeter(first_name, last_name)
 
@@ -50,7 +50,7 @@ def greeter(first_name, last_name):
 
 
 def email_generator(first_name, last_name, domain):
-    print(f"Email: {first_name[0:1].lower()}.{last_name.lower()}@{domain}")
+    print(f"Email: {first_name[0:1].lower()}.{last_name.lower()}@{domain}\n")
 
     # email_generator(first_name, last_name, domain)
 
