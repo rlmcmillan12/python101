@@ -7,7 +7,7 @@
 
 
 def group_tip_calculator():
-    total = int(input("What is the total of the bill?: "))
+    total = float(input("What is the total of the bill?: "))
     tip_percentage = int(input("What percent would you like to tip?: "))
     group_size = int(input("How many people are in your group?: "))
 
