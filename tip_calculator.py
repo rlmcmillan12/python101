@@ -10,7 +10,7 @@
 
 def percentage_plus(total, tip_percentage):
     tip_ammt = total * (tip_percentage / 100)
-    return total + tip_ammt
+    return round(total + tip_ammt, 2)
 
 
 def tip_calculator():

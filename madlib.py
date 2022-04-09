@@ -9,10 +9,6 @@
 # so that when you execute the script, it asks the user for input,
 # and then prints out the madlib story.
 
-noun = input("\nPlease enter a noun: ")
-verb = input("\nPlease enter a present-tense verb: ")
-name = input("\nPlease enter a name: ")
-
 
 def madlib(noun, verb, name):
     print(
@@ -25,5 +21,9 @@ def madlib(noun, verb, name):
         + ".\n"
     )
 
+
+noun = input("\nPlease enter a noun: ")
+verb = input("\nPlease enter a present-tense verb: ")
+name = input("\nPlease enter a name: ")
 
 madlib(noun, verb, name)
