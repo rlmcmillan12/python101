@@ -1,3 +1,6 @@
+import random
+
+
 # Write a script that asks the user for a number,
 # then prints all of the numbers up to and including that number:
 
@@ -148,6 +151,38 @@
 # Flip each coin print the result for each (coins are 50/50 chance of heads vs tails).
 
 
-def coin_flipper()
+# def coin_flip():
+#     flip = random.randint(0, 1)
+#     flip_count = 1
+#     if flip == 0:
+#         print(str(i + 1) + " Heads")
+#         flip_count += 1
+#     else:
+#         print(str(i + 1) + " Tails")
+#         flip_count += 1
 
-    input("Do you havea")
+
+# user_input_1 = input("Do you want to flip a coin?\nEnter yes or no: ")
+# coin_count = 0
+
+# if user_input_1.lower() == "yes":
+#     coin_count += 1
+
+# elif user_input_1.lower() == "no":
+#     print("You don't have any coins to flip, Goodbye.")
+#     exit()
+
+# while True:
+#     user_input_2 = input("Would you like to flip another?: ")
+
+#     if user_input_2.lower() == "yes":
+#         coin_count += 1
+#         print(f"You have {coin_count} coins")
+
+#     elif user_input_2.lower() == "no":
+#         break
+
+#     else:
+#         print("Please enter yes or no.")
+# for i in range(coin_count):
+#     coin_flip()
