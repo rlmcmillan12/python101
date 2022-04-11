@@ -49,17 +49,20 @@ import random
 # then print a message that shows the result
 
 
-def dice_roller(num_1, num_2):
+# def dice_roller(dice_sides):
 
-    if num_1 < num_2:
-        roll = random.randint(num_1, num_2)
-        print(roll)
-    elif num_1 > num_2:
-        roll = random.randint(num_2, num_1)
-        print(roll)
+#     if dice_sides >= 2 and dice_sides <= 20:
+#         roll = random.randint(1, dice_sides)
+#         print(roll)
+
+#     elif dice_sides < 2 and dice_sides > 20:
+#         print("That is not between 2 and 20")
 
 
-num_1 = int(input("Pick a number:"))
-num_2 = int(input("Enter another number: "))
+# dice_sides = int(
+#     input(
+#         "We are rolling a dice, how many sides do you want it to have? \nPick a number between 2 and 20: "
+#     )
+# )
 
-dice_roller(num_1, num_2)
+# dice_roller(dice_sides)

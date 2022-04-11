@@ -146,3 +146,8 @@
 # Write a script that tells the user they have 1 coin and asks them if they want another.
 # Keep adding coins until they say 'no'.
 # Flip each coin print the result for each (coins are 50/50 chance of heads vs tails).
+
+
+def coin_flipper()
+
+    input("Do you havea")
