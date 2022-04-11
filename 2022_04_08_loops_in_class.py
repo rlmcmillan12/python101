@@ -151,38 +151,43 @@ import random
 # Flip each coin print the result for each (coins are 50/50 chance of heads vs tails).
 
 
-# def coin_flip():
-#     flip = random.randint(0, 1)
-#     flip_count = 1
-#     if flip == 0:
-#         print(str(i + 1) + " Heads")
-#         flip_count += 1
-#     else:
-#         print(str(i + 1) + " Tails")
-#         flip_count += 1
+def coin_flip():
+    flip = random.randint(0, 1)
+    flip_count = 1
+    if flip == 0:
+        print("Coin #" + str(i + 1) + ": Heads")
+        flip_count += 1
+    else:
+        print("Coin #" + str(i + 1) + ": Tails")
+        flip_count += 1
 
 
-# user_input_1 = input("Do you want to flip a coin?\nEnter yes or no: ")
-# coin_count = 0
+coin_count = 0
+while True:
+    user_input_1 = input("Do you want to flip a coin?\nEnter yes or no: ")
 
-# if user_input_1.lower() == "yes":
-#     coin_count += 1
+    if user_input_1.lower() == "yes":
+        coin_count += 1
+        print("You have 1 coin")
+        break
 
-# elif user_input_1.lower() == "no":
-#     print("You don't have any coins to flip, Goodbye.")
-#     exit()
+    elif user_input_1.lower() == "no":
+        print("You don't have any coins to flip, Goodbye.")
+        exit()
+    else:
+        print("Please enter yes or no.")
 
-# while True:
-#     user_input_2 = input("Would you like to flip another?: ")
+while True:
+    user_input_2 = input("Would you like to flip another?: ")
 
-#     if user_input_2.lower() == "yes":
-#         coin_count += 1
-#         print(f"You have {coin_count} coins")
+    if user_input_2.lower() == "yes":
+        coin_count += 1
+        print(f"You have {coin_count} coins")
 
-#     elif user_input_2.lower() == "no":
-#         break
+    elif user_input_2.lower() == "no":
+        break
 
-#     else:
-#         print("Please enter yes or no.")
-# for i in range(coin_count):
-#     coin_flip()
+    else:
+        print("Please enter yes or no.")
+for i in range(coin_count):
+    coin_flip()
