@@ -88,31 +88,31 @@
 # print the top 3 words or letters:
 
 
-def word_histogram(user_sentence, word_count_dict):
-    user_sentence_list = user_sentence.split()
-    word_count_dict = {}
-    for words in user_sentence_list:
-        if words not in word_count_dict:
-            word_count_dict[words] = 0
-        word_count_dict[words] += 1
-    return word_count_dict
+# def word_histogram(user_sentence, word_count_dict):
+#     user_sentence_list = user_sentence.split()
+#     word_count_dict = {}
+#     for words in user_sentence_list:
+#         if words not in word_count_dict:
+#             word_count_dict[words] = 0
+#         word_count_dict[words] += 1
+#     return word_count_dict
 
 
-def top3Sorter(word_count_dict):
-    top3 = {}
+# def top3Sorter(word_count_dict):
+#     top3 = {}
 
-    sorted_word_count_dict = sorted(
-        word_count_dict, key=word_count_dict.get, reverse=True
-    )[:3]
+#     sorted_word_count_dict = sorted(
+#         word_count_dict, key=word_count_dict.get, reverse=True
+#     )[:3]
 
-    # for word in sorted_word_count_dict:
-    #     top3[word] = sorted_word_count_dict[word]
-    print(sorted_word_count_dict)
+#     # for word in sorted_word_count_dict:
+#     #     top3[word] = sorted_word_count_dict[word]
+#     print(sorted_word_count_dict)
 
 
-user_sentence = input("Type a sentence and I will so my magic: ")
-word_count_dict = {}
-word_histogram(user_sentence, word_count_dict)
-top3Sorter(word_count_dict)
+# user_sentence = input("Type a sentence and I will so my magic: ")
+# word_count_dict = {}
+# word_histogram(user_sentence, word_count_dict)
+# top3Sorter(word_count_dict)
 
-# top3Sorter(sorted_word_count_dict)
+# # top3Sorter(sorted_word_count_dict)
