@@ -13,7 +13,8 @@ DigitalCrafts WebDev Phone Book
 2) Set an Entry
 3) Delete an entry
 4) List all entries
-5) Quit"""
+5) Quit
+6) Look up an entry by phone number """
     )
 
     user_input = input("Pick an action 1-5: ")
@@ -58,3 +59,15 @@ DigitalCrafts WebDev Phone Book
                 + "\nPhone Number: "
                 + contact["Phone Number"]
             )
+    if user_input == "6":
+        for contact in phonebook:
+            if look_up_name == contact["Name"]:
+                print(
+                    "Name: " + contact["Name"] + "\nNumber: " + contact["Phone Number"]
+                )
+
+
+phonebook = [
+    {"name": "ryan", "phone number": "2346236"},
+    {"name": "maggie", "phone number": "2345234"},
+]
